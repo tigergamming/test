@@ -13,7 +13,7 @@ client.on('message', message => {
 
 client.on('message', message => {
     if (message.content === 'ping') {
-    	message.reply('PONG!');
+    	message.send('PONG!');
   	}
 });
 // THIS  MUST  BE  THIS  WAY
