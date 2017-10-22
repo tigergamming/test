@@ -17,5 +17,9 @@ client.on('message', message => {
   	}
 });
 
+bot.on('ready', () => {
+  bot.user.setGame('BOTCRAFT')
+})
+
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
