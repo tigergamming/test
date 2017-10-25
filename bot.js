@@ -6,18 +6,16 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
-    if (message.content === 'lol') {
-    	message.reply('lel');
-  	}
-});
+    
+    if(message.author.bot) return;
+    if(!message.content.startsWith(config.prefix)) return;
 
-client.on('message', message => {
-    if (message.content === 'ping') {
-    	message.reply('PONG!');
-  	}
-});
+    let command = message.content.split(" ")[0];
+    command = command.slice(config.prefix.length);
 
-if (command === "remove") {
+    let args = message.content.split(" ").slice(1);
+
+    if (command === "remove") {
         let num1 = parseInt(args[0]);
         message.channel.bulkDelete(num1 + 1);
         if (args[0] === "1") {
@@ -31,8 +29,21 @@ if (command === "remove") {
         }
 
     }
-
+    
+    if (command === "lol") {
+        
+        message.reply("lel");
+        
+    }
+    
+    if (command === "ping") {
+        
+        message.reply("PONG!");
+        
+    }
+    
 });
+
 
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
