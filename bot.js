@@ -17,5 +17,22 @@ client.on('message', message => {
   	}
 });
 
+if (command === "remove") {
+        let num1 = parseInt(args[0]);
+        message.channel.bulkDelete(num1 + 1);
+        if (args[0] === "1") {
+
+            message.channel.send("Deleted " + num1 + " message.")
+
+        } else if (num1 > 1) {
+
+            message.channel.send("Deleted " + num1 + " messages.");
+
+        }
+
+    }
+
+});
+
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
