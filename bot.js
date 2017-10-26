@@ -17,15 +17,26 @@ client.on('message', message => {
     let args = message.content.split(" ").slice(1);
 
     if (command === "remove") {
-        let num1 = parseInt(args[0]);
-        message.channel.bulkDelete(num1 + 1);
-        if (args[0] === "1") {
+        
+        let modRole = message.guild.roles.find("name", "Bot Commander");
+        
+        if (message.member.roles.has(modRole.id)) {
 
-            message.channel.send("Deleted " + num1 + " message.")
+            let num1 = parseInt(args[0]);
+            message.channel.bulkDelete(num1 + 1);
+            if (args[0] === "1") {
 
-        } else if (num1 > 1) {
+                message.channel.send("Deleted " + num1 + " message.")
 
-            message.channel.send("Deleted " + num1 + " messages.");
+            } else if (num1 > 1) {
+
+                message.channel.send("Deleted " + num1 + " messages.");
+
+            }
+            
+        } else {
+
+            message.reply("You do not have the permission to use this command.");
 
         }
 
