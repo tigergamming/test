@@ -58,7 +58,7 @@ client.on('message', message => {
     
     if (command === "say") {
         
-        message.channel.send(mess.join(""));
+        message.channel.send(mess.join(" "));
         
     }
     
