@@ -54,8 +54,12 @@ client.on('message', message => {
         
     }
     
-    if (message.contains("bitch")){
-        message.author.send(message.author + ', please try to avoid using strong language.')
+    let mess = message.content.split(" ").slice(1);
+    
+    if (command === "say") {
+        
+        message.channel.send(mess.join(""));
+        
     }
     
 });
