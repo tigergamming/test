@@ -39,7 +39,7 @@ client.on('message', message => {
     
     if (command === "ping") {
         
-        message.reply("PONG!");
+        message.channel.send("PONG!");
         
     }
     
