@@ -54,7 +54,7 @@ client.on('message', message => {
         
     }
     
-    if (message.content.match('bitch')){
+    if (message.contains("bitch")){
         message.author.send(message.author + ', please try to avoid using strong language.')
     }
     
