@@ -54,11 +54,10 @@ client.on('message', message => {
         
     }
     
-});
-
-if (message.content.match('bitch')){
+    if (message.content.match('bitch')){
         message.author.send(message.author + ', please try to avoid using strong language.')
-}
+    }
+    
 });
 
 // THIS  MUST  BE  THIS  WAY
