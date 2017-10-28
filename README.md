@@ -1,2 +1,2 @@
 # JoshBot
-Bot using heroku
+JoshBot is a multipurpose Discord bot built using discord.js
