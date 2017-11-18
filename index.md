@@ -6,6 +6,17 @@
 #### ?lol | **lel!**
 #### ?say *phrase* | **Says the specified phrase.**
 
-### For the following command, you will need to have created a role named 'Bot Commander' on your Discord server for it to work and have put yourself in that role.
+### For the following command, you will need to have created a role named 'Bot Commander' on your Discord server and to have put yourself into that role for it to work.
 
 #### ?remove *number* | **Removes the number of messages specified.**
+
+
+## ROADMAP
+
+- [x] Add a *say* command.
+- [x] Get a custom bot avatar/icon made.
+- [ ] Add a status/playing meesage.
+- [ ] Make the remove command less buggy.
+- [ ] Add a welcome/leave message system.
+- [ ] Add a MUSIC SYSTEM!
+- [ ] (possibly) Add a token/money system.
