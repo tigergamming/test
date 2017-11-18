@@ -40,7 +40,7 @@ client.on('message', message => {
     
     if (command === "help") {
         
-        message.reply("You can view the list of commands at https://definitelynotjosh.github.io/JoshBot");
+        message.channel.send("You can view the list of commands at https://definitelynotjosh.github.io/JoshBot");
         
     }
     
