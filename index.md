@@ -13,13 +13,13 @@
 
 ## ROADMAP
 
-[x] Add a *say* command.
-[x] Get a custom bot avatar/icon made.
-[ ] Add a status/playing meesage.
-[ ] Make the remove command less buggy.
-[ ] Add a welcome/leave message system.
-[ ] Add a MUSIC SYSTEM!
-[ ] (possibly) Add a token/money system.
+- [x] Add a *say* command.
+- [x] Get a custom bot avatar/icon made.
+- [ ] Add a status/playing meesage.
+- [ ] Make the remove command less buggy.
+- [ ] Add a welcome/leave message system.
+- [ ] Add a MUSIC SYSTEM!
+- [ ] (possibly) Add a token/money system.
 
 
 #### JoshBot by is licensed under a [Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License.](https://creativecommons.org/licenses/by-nc-nd/4.0/)
