@@ -54,7 +54,7 @@ client.on('message', message => {
     
     if (command === "ping") {
         
-        message.channel.send("PONG! " + new Date().getTime() - message.createdTimestamp + " ms");
+        message.channel.send("PONG! " + new Date().getTime() + message.createdTimestamp + " ms");
         
     }
     
