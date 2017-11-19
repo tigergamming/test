@@ -5,7 +5,7 @@ const config = require("./config.json");
 client.on('ready', () => {
      client.user.setGame('?help');
      console.log('Bot is up and Running!');
- });
+});
 
 client.on('message', message => {
     
@@ -59,7 +59,7 @@ client.on('message', message => {
     
     if (command === "ping") {
         
-        message.channel.send("PONG!");
+        message.channel.send("PONG! " + new Date().getTime() - message.createdTimestamp + " ms");
         
     }
     
