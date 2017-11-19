@@ -54,7 +54,13 @@ client.on('message', message => {
     
     if (command === "ping") {
         
-        message.channel.send("PONG! " + new Date().getTime() - message.createdTimestamp + " ms");
+        message.channel.send("PONG!");
+        
+    }
+    
+    if (command === "depressme") {
+        
+        message.author.sendMessage("You are a lonely person. You have crippling depression. You have no friends. Nobody likes you.");
         
     }
     
