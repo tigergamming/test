@@ -68,13 +68,13 @@ client.on('message', message => {
         
     }
     
-        if (command === "ping") {
+    if (command === "ping") {
         
-        message.channel.send('Ping?').then(msg => {
+      message.channel.send('Pong...').then(msg => {
             
             msg.edit(`**Pong**! Latency is ${msg.createdTimestamp - message.createdTimestamp}ms. API Latency is ${Math.round(bot.ping)}ms.`);
         
-        });
+      });
         
     }
   
