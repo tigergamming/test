@@ -2,10 +2,12 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 const config = require("./config.json");
 
+let prefix = config.prefix;
+
 client.on("ready", () => {
   // This event will run if the bot starts, and logs in, successfully.
   console.log(`Bot has started, with ${client.users.size} users, in ${client.channels.size} channels of ${client.guilds.size} guilds.`); 
-  client.user.setGame(`${config.prefix}help`);
+  client.user.setGame(prefix + "help");
 });
 
 client.on("guildCreate", guild => {
