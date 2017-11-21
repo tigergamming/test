@@ -5,6 +5,7 @@ const config = require("./config.json");
 client.on("ready", () => {
   // This event will run if the bot starts, and logs in, successfully.
   console.log(`Bot has started, with ${client.users.size} users, in ${client.channels.size} channels of ${client.guilds.size} guilds.`); 
+  client.user.setGame(`${config.prefix}help`);
 });
 
 client.on("guildCreate", guild => {
