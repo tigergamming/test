@@ -68,7 +68,7 @@ client.on('message', message => {
         
     }
     
-        if (mess.startsWith(prefix + "ping")) {
+        if (command === "ping") {
         
         message.channel.send('Ping?').then(msg => {
             
