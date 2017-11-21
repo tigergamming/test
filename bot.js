@@ -4,8 +4,7 @@ const config = require("./config.json");
 
 let prefix = config.prefix;
 
-client.on("ready", () => {
-  // This event will run if the bot starts, and logs in, successfully.
+client.on("ready", function() {
   console.log(`Bot has started, with ${client.users.size} users, in ${client.channels.size} channels of ${client.guilds.size} guilds.`); 
   client.user.setGame(prefix + "help");
 });
