@@ -4,7 +4,7 @@ const config = require("./config.json");
 
 let prefix = config.prefix;
 
-client.on("ready", () => {
+bot.on("ready", () => {
     console.log('Ready to begin! Serving in ' + bot.guilds.array().length + ' servers.');
     bot.user.setStatus("online", "");
 });
