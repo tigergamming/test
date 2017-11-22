@@ -80,6 +80,12 @@ client.on('message', message => {
         
     }
   
+    if  (command === "stats") {
+   
+        message.channel.send(\`I'm messing around with ${client.users.size} users, in ${client.channels.size} channels of ${client.guilds.size} guilds.`);
+   
+    }
+
     if (command === "website") {
         
         message.channel.send("You can view my website here: https://definitelynotjosh.github.io/JoshBot");
