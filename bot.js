@@ -82,8 +82,7 @@ client.on('message', message => {
   
     if (command === "status") {
    
-       message.channel.send(":white_check_mark: JoshBot is **online!**");
-   
+       message.channel.send("JoshBot is **online!**");
     }
 
     if (command === "website") {
