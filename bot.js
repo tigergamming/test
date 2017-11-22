@@ -86,14 +86,6 @@ client.on('message', message => {
         message.author.sendMessage("You are a lonely person. You have crippling depression. You have no friends. Nobody likes you.");
         
     }
-  
-    if (command === "embed") {
-      
-        message.channel.send({embed: {
-          color: 3447003,
-          description: "A very simple Embed!"
-          
-    }
                                                    
     if (command === "invite") {
         
