@@ -80,9 +80,9 @@ client.on('message', message => {
         
     }
   
-    if  (command === "stats") {
+    if (command === "stats") {
    
-        message.channel.send(\`I'm messing around with ${client.users.size} users, in ${client.channels.size} channels of ${client.guilds.size} guilds.`);
+       message.channel.send(\`I'm messing around with ${client.users.size} users, in ${client.channels.size} channels of ${client.guilds.size} guilds.`);
    
     }
 
