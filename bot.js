@@ -78,11 +78,11 @@ client.on('message', message => {
         
       });
         
-    }
+    }p
   
-    if (command === "stats") {
+    if (command === "status") {
    
-       message.channel.send(`I'm messing around with ${client.users.size} users, in ${client.channels.size} channels of ${client.guilds.size} guilds.`);
+       message.channel.send(":white_check_mark: JoshBot is **online!**");
    
     }
 
