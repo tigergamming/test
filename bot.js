@@ -87,6 +87,15 @@ client.on('message', message => {
         
     }
   
+    if (command === "embed") {
+      
+        message.channel.send({embed: {
+        color: 3447003,
+        description: "A very simple Embed!"
+          
+    }
+                                                   
+  
     if (command === "invite") {
         
         message.channel.send("You can add JoshBot to your server here: https://discordapp.com/oauth2/authorize?client_id=371553407569362955&scope=bot&permissions=8");
