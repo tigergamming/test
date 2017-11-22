@@ -88,7 +88,7 @@ client.on('message', message => {
 
     if (command === "website") {
         
-        message.channel.send("You can view my website here: https://definitelynotjosh.github.io/JoshBot");
+       message.channel.send("You can view my website here: https://definitelynotjosh.github.io/JoshBot");
         
     }
     
