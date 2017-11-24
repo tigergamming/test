@@ -55,7 +55,7 @@ client.on('message', message => {
   
     if(command === "ayy") {
    
-        message.react("");
+        message.channel.send("\:poop:");
     
     }
     
