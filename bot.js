@@ -55,13 +55,13 @@ client.on('message', message => {
   
     if (command === "ayy") {
    
-        message.channel.send("\:hand_splayed:");
+        message.channel.send("Ayy! What's up?");
     
     }
     
     if (command) === "poop") {
         
-        message.author.sendMessage("NO, you're a poop \:poop:")
+        message.author.sendMessage("\:poop: NO, you're a poop!");
       
     }
   
@@ -79,17 +79,15 @@ client.on('message', message => {
     
     if (command === "ping") {
         
-      message.channel.send('Pong...').then(msg => {
+        message.channel.send('Pong...').then(msg => {
             
             msg.edit(`**Pong**! Latency is ${msg.createdTimestamp - message.createdTimestamp}ms. API Latency is ${Math.round(client.ping)}ms.`);
-        
-      });
         
     }
 
     if (command === "website") {
         
-       message.channel.send("You can view my website here: https://definitelynotjosh.github.io/JoshBot");
+        message.channel.send("You can view my website here: https://definitelynotjosh.github.io/JoshBot");
         
     }
     
