@@ -61,7 +61,7 @@ client.on('message', message => {
     
     if(command) === "poop") {
         
-        message.react(305818615712579584)
+        message.react(ayy.305818615712579584)
       
     }
   
