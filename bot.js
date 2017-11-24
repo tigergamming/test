@@ -4,6 +4,14 @@ const config = require("./config.json");
 
 let prefix = config.prefix;
 
+client.on('ready', () => {
+    // This will trigger when the bot comes online.
+    console.log(`${client.user.tag} Is Active!`);
+    console.log(`----------------`);
+
+    client.user.setGame(`${config.prefix}help | ${client.guilds.size} Servers`, 2);
+});
+
 client.on("guildCreate", guild => {
   // This event triggers when the bot joins a guild.
   console.log(`New guild joined: ${guild.name} (id: ${guild.id}). This guild has ${guild.memberCount} members!`);
