@@ -59,6 +59,12 @@ client.on('message', message => {
     
     }
     
+    if(command) === "poop") {
+        
+        message.react("305818615712579584")
+      
+    }
+  
     if (command === "help") {
         
         message.channel.send("You can view the list of commands at https://definitelynotjosh.github.io/JoshBot");
