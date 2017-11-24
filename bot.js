@@ -59,7 +59,7 @@ client.on('message', message => {
     
     }
     
-    if (command) === "poop") {
+    if (command === "poop") {
         
         message.author.sendMessage("\:poop: NO, you're a poop!");
       
