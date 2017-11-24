@@ -55,13 +55,13 @@ client.on('message', message => {
   
     if (command === "ayy") {
    
-        message.channel.sendMessage("\:hand_splayed:");
+        message.channel.send("\:hand_splayed:");
     
     }
     
     if (command) === "poop") {
         
-        message.author.send("NO, you're a poop /:poop:")
+        message.author.sendMessage("NO, you're a poop /:poop:")
       
     }
   
