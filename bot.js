@@ -4,10 +4,6 @@ const config = require("./config.json");
 
 let prefix = config.prefix;
 
-client.on('ready', () => {
-client.user.setUsername("nuBot")
-});
-
 client.on("guildCreate", guild => {
   // This event triggers when the bot joins a guild.
   console.log(`New guild joined: ${guild.name} (id: ${guild.id}). This guild has ${guild.memberCount} members!`);
@@ -57,7 +53,7 @@ client.on('message', message => {
 
     }
   
-    if(message.content === "ayy") {
+    if(command === "ayy") {
    
        const ayy = client.emojis.find("name", "ayy");
        message.reply(`${ayy} LMAO`);
