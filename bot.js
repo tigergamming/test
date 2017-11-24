@@ -5,7 +5,7 @@ const config = require("./config.json");
 let prefix = config.prefix;
 
 client.on('ready', () => {
-client.user.setUsername("OnO")
+client.user.setUsername("nuBot")
 });
 
 client.on("guildCreate", guild => {
@@ -55,6 +55,13 @@ client.on('message', message => {
 
         }
 
+    }
+  
+    if(message.content === "ayy") {
+   
+       const ayy = client.emojis.find("name", "ayy");
+       message.reply(`${ayy} LMAO`);
+    
     }
     
     if (command === "help") {
