@@ -61,7 +61,7 @@ client.on('message', message => {
     
     if (command) === "poop") {
         
-        message.author.sendMessage("NO, you're a poop /:poop:")
+        message.author.sendMessage("NO, you're a poop \:poop:")
       
     }
   
