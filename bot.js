@@ -55,8 +55,7 @@ client.on('message', message => {
   
     if(command === "ayy") {
    
-       const ayy = client.emojis.find("ayy");
-       message.reply(`${ayy} LMAO`);
+        message.react("\:poop:");
     
     }
     
