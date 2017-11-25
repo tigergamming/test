@@ -30,7 +30,7 @@ client.on("guildMemberAdd", (u) => {
     
     if (!channel) return console.log(`Channel ${logChannel} cannot be found.`);
 
-    channel.send(joinMsg);
+    channel.send('${joinMsg}');
 });
 
 client.on("guildMemberRemove", (u) => {
@@ -38,7 +38,7 @@ client.on("guildMemberRemove", (u) => {
 
     if (!channel) return console.log(`Channel ${logChannel} cannot be found.`);
 
-    channel.send(leaveMsg);
+    channel.send('${leaveMsg}');
 });
 
 client.on('message', message => {
