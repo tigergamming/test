@@ -8,6 +8,10 @@ let joinMsg = config.joinMsg;
 let leaveMsg = config.leaveMsg;
 
 client.on('ready', () => {
+client.user.setUsername("nuBot Demo")
+});
+
+client.on('ready', () => {
     // This will trigger when the bot comes online.
     console.log(`${client.user.tag} Is Active!`);
     console.log(`----------------`);
