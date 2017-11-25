@@ -90,7 +90,6 @@ client.on('message', message => {
             
             msg.edit(`**Pong**! Latency is ${msg.createdTimestamp - message.createdTimestamp}ms. API Latency is ${Math.round(client.ping)}ms.`);
         
-    }
 
     if (command === "website") {
         
