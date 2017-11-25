@@ -8,8 +8,6 @@ client.on('ready', () => {
     // This will trigger when the bot comes online.
     console.log(`${client.user.tag} Is Active!`);
     console.log(`----------------`);
-
-    client.user.setGame(`${config.prefix}help | ${client.guilds.size} Servers`, 2);
 });
 
 client.on("guildCreate", guild => {
@@ -31,7 +29,7 @@ client.on('message', message => {
     command = command.slice(config.prefix.length);
 
     let args = message.content.split(" ").slice(1);
-
+});
     
     
     if (command === "remove") {
@@ -90,7 +88,8 @@ client.on('message', message => {
             
             msg.edit(`**Pong**! Latency is ${msg.createdTimestamp - message.createdTimestamp}ms. API Latency is ${Math.round(client.ping)}ms.`);
         
-
+    }
+                                             
     if (command === "website") {
         
         message.channel.send("You can view my website here: https://definitelynotjosh.github.io/JoshBot");
@@ -115,7 +114,7 @@ client.on('message', message => {
         
         message.channel.send(mess.join(" "));
     
-}
+});
 
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
