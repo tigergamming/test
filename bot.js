@@ -89,8 +89,10 @@ client.on('message', message => {
         
         message.channel.send('Pong...').then(msg => {
             
-            msg.edit(`**Pong**! Latency is ${msg.createdTimestamp - message.createdTimestamp}ms. API Latency is ${Math.round(client.ping)}ms.`)});
- 
+            msg.edit(`**Pong**! Latency is ${msg.createdTimestamp - message.createdTimestamp}ms. API Latency is ${Math.round(bot.ping)}ms.`);
+        
+        });
+        
     }
                                              
     if (command === "website") {
