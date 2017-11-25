@@ -32,7 +32,7 @@ client.on('message', message => {
 
     let args = message.content.split(" ").slice(1);
 
-});
+
     
     
     if (command === "remove") {
@@ -120,6 +120,6 @@ client.on('message', message => {
         message.channel.send(mess.join(" "));
     
     }
-
+});
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
