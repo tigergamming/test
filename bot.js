@@ -69,7 +69,7 @@ client.on('message', message => {
     
     if (command === "poop") {
         
-        message.author.sendMessage("\:poop: NO, you're a poop!");
+        message.author.sendMessage("NO, you're a poop!");
       
     }
   
@@ -90,7 +90,8 @@ client.on('message', message => {
         message.channel.send('Pong...').then(msg => {
             
             msg.edit(`**Pong**! Latency is ${msg.createdTimestamp - message.createdTimestamp}ms. API Latency is ${Math.round(client.ping)}ms.`);
-    })       
+ 
+    }
                                              
     if (command === "website") {
         
@@ -101,13 +102,13 @@ client.on('message', message => {
     if (command === "depressme") {
         
         message.author.sendMessage("You are a lonely person. You have crippling depression. You have no friends. Nobody likes you.");
-        
+ 
     }
-                                                   
+                     
     if (command === "invite") {
-        
+  
         message.channel.send("You can add JoshBot to your server here: https://discordapp.com/oauth2/authorize?client_id=371553407569362955&scope=bot&permissions=8");
-        
+ 
     }
   
     let mess = message.content.split(" ").slice(1);
