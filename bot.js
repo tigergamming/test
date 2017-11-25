@@ -13,11 +13,13 @@ client.on('ready', () => {
 client.on("guildCreate", guild => {
   // This event triggers when the bot joins a guild.
   console.log(`New guild joined: ${guild.name} (id: ${guild.id}). This guild has ${guild.memberCount} members!`);
+    
 });
 
 client.on("guildDelete", guild => {
   // this event triggers when the bot is removed from a guild.
   console.log(`I have been removed from: ${guild.name} (id: ${guild.id})`);
+    
 });
 
 client.on('message', message => {
@@ -29,6 +31,7 @@ client.on('message', message => {
     command = command.slice(config.prefix.length);
 
     let args = message.content.split(" ").slice(1);
+
 });
     
     
@@ -113,7 +116,7 @@ client.on('message', message => {
         
         message.channel.send(mess.join(" "));
     
-}
+    }
 
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
