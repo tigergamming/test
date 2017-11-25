@@ -3,6 +3,9 @@ const client = new Discord.Client();
 const config = require("./config.json");
 
 let prefix = config.prefix;
+let logChannel = config.channel;
+let joinMsg = config.joinMsg;
+let leaveMsg = config.leaveMsg;
 
 client.on('ready', () => {
     // This will trigger when the bot comes online.
@@ -20,6 +23,22 @@ client.on("guildDelete", guild => {
   // this event triggers when the bot is removed from a guild.
   console.log(`I have been removed from: ${guild.name} (id: ${guild.id})`);
     
+});
+
+client.on("guildMemberAdd", (u) => {
+    let channel = u.guild.channels.find("name", logChannel)
+    
+    if (!channel) return console.log(`Channel ${logChannel} cannot be found.`);
+
+    channel.send(joinMsg);
+});
+
+client.on("guildMemberRemove", (u) => {
+    let channel = u.guild.channels.find("name", logChannel)
+
+    if (!channel) return console.log(`Channel ${logChannel} cannot be found.`);
+
+    channel.send(leaveMsg);
 });
 
 client.on('message', message => {
