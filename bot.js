@@ -5,6 +5,10 @@ const config = require("./config.json");
 let prefix = config.prefix;
 
 client.on('ready', () => {
+client.user.setUsername("nuBot Demo")
+});
+
+client.on('ready', () => {
 client.user.setUsername("nuBot")
 });
 
