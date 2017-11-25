@@ -1,3 +1,6 @@
 {
-    "prefix" : "?"
+    "prefix" : "?",
+    "channel" : "welcome",
+    "joinMsg" : 'Welcome ${u.user.username} (${u.user}) to the server!',
+    "leaveMsg" : '${u.user.username} left the server, rip them.'
 }
