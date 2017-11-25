@@ -4,8 +4,6 @@ const config = require("./config.json");
 
 let prefix = config.prefix;
 let logChannel = config.channel;
-let joinMsg = config.joinMsg;
-let leaveMsg = config.leaveMsg;
 
 client.on('ready', () => {
 client.user.setUsername("nuBot Demo")
@@ -34,7 +32,7 @@ client.on("guildMemberAdd", (u) => {
     
     if (!channel) return console.log(`Channel ${logChannel} cannot be found.`);
 
-    channel.send(`${joinMsg}`);
+    channel.send(`:tada: Welcome ${u.user.username} (${u.user}) to **BeepBoopBots**!`);
 });
 
 client.on("guildMemberRemove", (u) => {
@@ -42,7 +40,7 @@ client.on("guildMemberRemove", (u) => {
 
     if (!channel) return console.log(`Channel ${logChannel} cannot be found.`);
 
-    channel.send(`${leaveMsg}`);
+    channel.send(`:wave: ${u.user.username} (${u.user}) just left **BeepBoopBots**. How sad.`);
 });
 
 client.on('message', message => {
