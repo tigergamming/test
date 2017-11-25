@@ -1,4 +1,6 @@
 {
     "prefix" : "?",
     "channel" : "welcome"
+    "joinMsg" : `:tada: Welcome ${u.user.username} (${u.user}) to the server!`,
+    "leaveMsg" : `Rip, ${u.user.username} left.`
 }
