@@ -85,7 +85,7 @@ client.on('message', message => {
     if (command === "ayy") {
    
         message.channel.send("Ayy! What's up?");
-    
+        message.delete(0);
     }
     
     if (command === "poop") {
