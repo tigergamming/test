@@ -81,6 +81,16 @@ client.on('message', message => {
         }
 
     }
+    
+    if (command == "biu") {
+    randomNumber = [generate number from 1 to 3]
+    if (randomNumber == 1) { // Italics
+        reply("*" + arguments + "*")
+    } else if (randomNumber == 2) { // Bold
+        reply("**" + arguments + "**")
+    } else { // Underline
+        reply("__" + arguments + "__")
+    }
   
     if (command === "ayy") {
    
