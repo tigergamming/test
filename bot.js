@@ -32,7 +32,7 @@ client.on("guildMemberAdd", (u) => {
     
     if (!channel) return console.log(`Channel ${logChannel} cannot be found.`);
 
-    channel.send(`:tada: Welcome ${u.user.username} (${u.user}) to **BeepBoopBots**!`);
+    channel.send(`:tada: Welcome ${u.user.username} (${u.user}) to **${guild.name}**!`);
 });
 
 client.on("guildMemberRemove", (u) => {
@@ -40,7 +40,7 @@ client.on("guildMemberRemove", (u) => {
 
     if (!channel) return console.log(`Channel ${logChannel} cannot be found.`);
 
-    channel.send(`:wave: ${u.user.username} (${u.user}) just left **BeepBoopBots**. How sad.`);
+    channel.send(`:wave: ${u.user.username} (${u.user}) just left **${guild.name}**. How sad.`);
 });
 
 client.on('message', message => {
