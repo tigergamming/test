@@ -138,7 +138,7 @@ client.on('message', message => {
     
     if (command === "say") {
         
-        msg.delete(0);
+        message.delete(0)
         message.channel.send(mess.join(" "));
     
     }
