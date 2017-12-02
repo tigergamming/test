@@ -81,16 +81,6 @@ client.on('message', message => {
         }
 
     }
-    
-    if (command == "biu") {
-    randomNumber = [generate number from 1 to 3]
-    if (randomNumber == 1) { // Italics
-        reply("*" + arguments + "*")
-    } else if (randomNumber == 2) { // Bold
-        reply("**" + arguments + "**")
-    } else { // Underline
-        reply("__" + arguments + "__")
-    }
   
     if (command === "ayy") {
    
@@ -142,6 +132,12 @@ client.on('message', message => {
   
         message.channel.send("You can add JoshBot to your server here: https://discordapp.com/oauth2/authorize?client_id=371553407569362955&scope=bot&permissions=8");
  
+    }
+    
+    if (command === "angry") {
+        
+        message.reply("**NUBOT ANGRYYY!**");
+        
     }
   
     let mess = message.content.split(" ").slice(1);
