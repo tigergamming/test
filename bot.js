@@ -6,17 +6,10 @@ let prefix = config.prefix;
 let logChannel = config.channel;
 
 client.on('ready', () => {
-client.user.setUsername("nuBot Demo")
-});
-
-client.on('ready', () => {
     // This will trigger when the bot comes online.
     console.log(`${client.user.tag} Is Active!`);
     console.log(`----------------`);
-});
-
-client.on('ready', () => {
-client.user.setGame('game');
+    client.user.setGame('game');
 });
 
 client.on("guildCreate", guild => {
