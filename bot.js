@@ -103,6 +103,25 @@ client.on('message', message => {
         
     }
     
+    if (command === "embed") {
+        
+       
+        message.channel.send({embed: {
+          color: 3447003,
+          author: {
+            name: client.user.username,
+            icon_url: message.author.avatarURL
+          },
+          fields: [{
+              name: `This is an example embed generated for ${message.author.tag}!`,
+              value: `You can read more [here](https://discord.js.org/#/)!`
+            },
+          ],
+        }
+      });
+
+
+    
     if (command === "ping") {
         
         message.channel.send('Pong...').then(msg => {
