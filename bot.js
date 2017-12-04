@@ -5,6 +5,9 @@ const config = require("./config.json");
 let prefix = config.prefix;
 let logChannel = config.channel;
 
+client.on("ready", () => { client.user.setPresence({game: {name: "?help", type: 0}});
+});
+
 client.on('ready', () => {
     // This will trigger when the bot comes online.
     console.log(`${client.user.tag} Is Active!`);
