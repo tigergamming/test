@@ -103,6 +103,12 @@ client.on('message', message => {
         
     }
     
+    if (command === "myavatar") {
+       
+        message.reply(message.author.avatarURL);
+    
+    }
+          
     if (command === "ping") {
         
         message.channel.send('Pong...').then(msg => {
