@@ -9,7 +9,7 @@ client.on('ready', () => {
     // This will trigger when the bot comes online.
     console.log(`${client.user.tag} Is Active!`);
     console.log(`----------------`);
-    client.user.setPresence({game: {name: `?help | ${client.guilds.size} servers`, type: 0}});
+    client.user.setPresence({game: {name: `?help | on ${client.guilds.size} servers`, type: 0}});
 });
 
 client.on("guildCreate", guild => {
@@ -102,25 +102,6 @@ client.on('message', message => {
         message.reply("lel");
         
     }
-    
-    if (command === "embed") {
-        
-       
-        message.channel.send({embed: {
-          color: 3447003,
-          author: {
-            name: client.user.username,
-            icon_url: message.author.avatarURL
-          },
-          fields: [{
-              name: `This is an example embed generated for ${message.author.tag}!`,
-              value: `You can read more [here](https://discord.js.org/#/)!`
-            },
-          ],
-        }
-      });
-
-
     
     if (command === "ping") {
         
